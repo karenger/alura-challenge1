@@ -1,0 +1,54 @@
+<html lang="en" >
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Alura Latam - Challenge 1</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/LogoA.ico">
+</head>
+<body>
+    <header class="header">
+        <div>
+          <div class="logo-efecto">
+            <spam class="logo-img"></spam>
+          </div>
+          <h2>Alura Latam</h2>
+        </div>
+    </header>
+    <main class="main">
+      
+      <section class="primer-panel">
+        <form role="form" id="form">
+          <textarea rows="10" placeholder="Ingrese el texto aquí." id="txtTexto" required></textarea>
+          <button id="btnEncriptar" type="submit"> Encriptar</button>
+          <button id="btnDesencriptar" type="submit"> Desencriptar</button>
+          <button id="btnLimpiar" type="submit"> Limpiar</button>
+        </form>
+      </section>
+      <section class="segundo-panel" id="segundoPanel">
+        <div class="div-muneco" id="divMuneco">
+            <img src="img/Muneco.png" alt="Muñeco de Alura" class="img">
+        </div>
+        <div class="div-titulo" id="divTitulo">
+            <h2>Ningún mensaje fue encontrado</h2>
+        </div>
+        <div class="div-mensaje" id="DivMensaje">
+            <h>Ingresa el texto que desees encriptar o desencriptar.</h>
+        </div>
+        <div class="div-resultado">
+          <h3>Mensaje Encriptado</h3>
+          <hr>
+          <p id="textResultado"></p>
+        </div>
+        <hr>
+        <div class="div-copiar">
+          <button id="btncopiar" type="button" onclick="copiarTexto()"> Copiar</button>
+        </div>
+      </section>    
+    </main>
+    <footer>
+      <div class="copyright">&copy; TODOS LOS DERECHOS RESERVADOS</div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

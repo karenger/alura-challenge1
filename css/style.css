@@ -1,0 +1,209 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+}
+
+header {
+    height: 20%;
+    text-align: center;
+    font: 40px 'Inter', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.header h2 {
+    font-weight: bold;
+    display: inline;
+}
+
+main {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex: 1;
+}
+
+.primer-panel {
+    width: 60%;
+    height: 100%;
+}
+
+.segundo-panel {
+    width: 30%;
+    height: 100%;
+    max-width: 100%;
+    background-color: #555;
+    border-radius: 5%;
+    padding: 12px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+footer {
+    height: 10%;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer div {
+    padding: 1% 0;
+}
+
+.div-muneco {
+    width: 100%;
+    height: 60%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img {
+    width: 275px;
+    height: auto;
+}
+
+.div-titulo {
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    color: #fff;
+}
+
+.div-mensaje {
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    color: #fff;
+}
+
+.div-resultado {
+    color: #fff;
+}
+
+.div-resultado h3 {
+    text-align: center;
+}
+
+/* Efecto Logo */
+.logo-efecto {
+    display: inline;
+    text-align: center;
+    width: 100%;
+    vertical-align: middle;
+}
+
+
+.logo-efecto .logo-img {
+    position: relative;
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: #0c3474;
+    box-shadow: 0 0 0 5px #0c3474;
+    cursor: pointer;
+    transition: .2s;
+    background-image: url("../img/LogoB.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center;
+}
+
+.logo-efecto .logo-img:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    opacity: 0;
+    box-shadow: 0 0 0 3px #fff;
+    transition: .2s;
+    background-image: url("../img/LogoA.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center;
+}
+
+.logo-efecto .logo-img:hover {
+    background-color: #fff;
+}
+
+.logo-efecto .logo-img:hover:after {
+    opacity: 1;
+    transform: scale(1.12);
+}
+
+textarea {
+    display: block;
+    width: 95%;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #000;
+    color: #fff;
+    letter-spacing: 1px;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    margin: 5px;
+}
+
+button {
+    display: inline-block;
+    text-align: center;
+    border: 1px solid transparent;
+    padding: 12px;
+    margin: 10px;
+    font-size: 20px;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    color: #fff;
+    background-color: #0c3474;
+    border-color: #0c3474;
+    width: 200px;
+}
+
+button:hover,
+button:focus {
+    text-decoration: none;
+    color: #fff;
+    background-color: #54709d;
+    border-color: #54709d;
+    cursor: pointer;
+}
+
+hr {
+    border-color: rgba(255, 255, 255, .6);
+}
+
+.ocultar {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+
+    .main {
+        flex-direction: column;
+    }
+
+    .primer-panel,
+    .segundo-panel {
+        width: 100%;
+    }
+
+    .img {
+        width: 200px;
+    }
+}
